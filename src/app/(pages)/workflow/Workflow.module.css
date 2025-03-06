@@ -1,0 +1,120 @@
+/* src/app/(pages)/workflow/Workflow.module.css */
+.container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .tablesContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .table, .centralTable {
+    position: relative;
+    width: 200px; /* Largura da mesa */
+    height: 150px; /* Altura da mesa */
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .centralTable {
+    background-color: #e0f7fa; /* Cor destacada para a mesa central */
+    border-color: #0070f3;
+  }
+  
+  .tableLabel {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0070f3;
+  }
+  
+  .tableTop {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .people {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 120%; /* Espaço para as pessoas */
+  }
+  
+  .personLeft, .personRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre as pessoas */
+  }
+  
+  .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .head {
+    width: 20px;
+    height: 20px;
+    background-color: #ffcc80; /* Cor da cabeça */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shoulders {
+    width: 30px;
+    height: 10px;
+    background-color: #4caf50; /* Cor dos ombros */
+    margin-top: 5px;
+  }
+  
+  .arms {
+    width: 40px;
+    height: 10px;
+    background-color: #4caf50; /* Cor dos braços */
+    margin-top: 5px;
+    position: relative;
+  }
+  
+  .arms::before, .arms::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: #4caf50; /* Cor dos braços */
+    top: -10px;
+  }
+  
+  .arms::before {
+    left: 0;
+  }
+  
+  .arms::after {
+    right: 0;
+  }
+  
+  .personLeft {
+    margin-right: 60px; /* Distância da mesa */
+  }
+  
+  .personRight {
+    margin-left: 60px; /* Distância da mesa */
+  }

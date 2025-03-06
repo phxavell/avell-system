@@ -1,8 +1,7 @@
-// src/app/(pages)/dashboard/page.tsx
 'use client'; // Marca este componente como um Client Component
 import { useState } from 'react'; // Importe o useState
 import styles from './Dashboard.module.css';
-import { FaCogs, FaBoxes, FaCheckCircle } from 'react-icons/fa'; // Ícones para o dashboard
+import { FaCogs, FaBoxes, FaCheckCircle, FaClipboard, FaSearch, FaChartLine, FaCheck } from 'react-icons/fa'; // Ícones para o dashboard
 
 export default function Dashboard() {
   // Estado para controlar qual card está expandido
@@ -34,10 +33,10 @@ export default function Dashboard() {
           {/* Opções expandidas */}
           {expandedCard === 'processos' && (
             <div className={styles.options}>
-              <p>Montagem</p>
-              <p>Imagem</p>
-              <p>Teste</p>
-              <p>Revisão</p>
+              <p><FaCheck size={20} /> Montagem</p>
+              <p><FaClipboard size={20} /> Imagem</p>
+              <p><FaCheckCircle size={20} /> Teste</p>
+              <p><FaChartLine size={20} /> Revisão</p>
             </div>
           )}
         </div>
@@ -53,9 +52,9 @@ export default function Dashboard() {
           {/* Opções expandidas */}
           {expandedCard === 'estoque' && (
             <div className={styles.options}>
-              <p>Entrada de Materiais</p>
-              <p>Saída de Materiais</p>
-              <p>Inventário</p>
+              <p><FaClipboard size={20} /> Entrada de Materiais</p>
+              <p><FaBoxes size={20} /> Saída de Materiais</p>
+              <p><FaChartLine size={20} /> Inventário</p>
             </div>
           )}
         </div>
@@ -71,9 +70,9 @@ export default function Dashboard() {
           {/* Opções expandidas */}
           {expandedCard === 'qualidade' && (
             <div className={styles.options}>
-              <p>Inspeção</p>
-              <p>Testes de Qualidade</p>
-              <p>Relatórios</p>
+              <p><FaSearch size={20} /> Inspeção</p>
+              <p><FaCheckCircle size={20} /> Testes de Qualidade</p>
+              <p><FaChartLine size={20} /> Relatórios</p>
             </div>
           )}
         </div>
