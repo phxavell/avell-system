@@ -1,0 +1,49 @@
+/* styles/Login.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .loginBox {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .iconContainer {
+    margin-bottom: 1rem;
+  }
+  
+  .laptopIcon {
+    color: #333; /* Cor escura inicial */
+    transition: color 0.3s ease;
+  }
+  
+  .laptopIcon.loggedIn {
+    color: #0070f3; /* Cor azul ao logar */
+  }
+  
+  .loginButton {
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .loginButton:hover {
+    background-color: #005bb5;
+  }
